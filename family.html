@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Virtual Crib</title>
+    <style>
+        @font-face {
+            font-family: Lovelo;
+            src: url(Lovelo\ Black.otf);
+        }
+        
+        @font-face {
+            font-family: Hollowvelo;
+            src: url(Lovelo\ Line\ Bold.otf);
+        }
+        
+        @font-face {
+            font-family: AgrandirReg;
+            src: url(Agrandir-Regular.otf);
+        }
+        
+        @font-face {
+            font-family: AgrandirBold;
+            src: url(Agrandir-TextBold.otf);
+        }
+        
+        body {
+            background-color: #FFCC99;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            width: calc(100% - 192px);
+            height: 120px;
+            border: 3px solid black;
+            position: relative;
+            margin: 4px 96px;
+        }
+        
+        header h1 {
+            color: black;
+            font-family: Lovelo;
+            font-size: 56px;
+            margin: 4px;
+        }
+        
+        header img {
+            position: absolute;
+            top: 5px;
+            right: 4px;
+        }
+        
+        header h2 {
+            font-family: AgrandirReg;
+            color: #000000;
+            margin: 7px;
+        }
+        
+        nav {
+            width: calc(100% - 192px);
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 4px 96px;
+            padding-top: 15px;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav li:hover{
+  background-color: #80808080;
+  transition: 0.5s;
+}
+
+nav li {
+  display: inline-block;
+  margin: 72px;
+  padding: 15px
+}
+        
+        nav li a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+        }
+        
+        li {
+            font-family: AgrandirBold;
+        }
+        
+        article {
+            width: calc(100% - 232px);
+            border: 3px solid black;
+            background-color: #FFCC99;
+            padding: 20px;
+            margin: 20px 96px;
+            min-height: calc(100vh - 324px);
+        }
+        
+        article h2 {
+            font-family: Hollowvelo;
+            color: black;
+            font-size: 76px;
+            margin: 2px;
+        }
+        
+        article img {
+            float: left;
+            margin-right: 20px;
+            margin-top: 4px;
+            width: 380px;
+            height: 380px;
+        }
+        
+        article p {
+            font-family: AgrandirReg;
+            font-size: 28px;
+            margin-top: 4px;
+        }
+        
+        footer {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 4px 96px;
+        }
+        
+        .gallery {
+            width: calc(100% - 232px);
+            border: 3px solid black;
+            background-color: #FFCC99;
+            padding: 20px;
+            margin: 20px 96px;
+            min-height: calc(100vh - 324px);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .gallery-item {
+            width: calc(50% - 10px);
+            margin-bottom: 20px;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .gallery-item p {
+            font-family: AgrandirReg;
+            font-size: 28px;
+            margin-top: 4px;
+        }
+        
+        footernav {
+            margin: 20px 96px;
+            position: relative;
+            bottom: 0;
+            width: calc(100% - 192px);
+            display: flex;
+            justify-content: center;
+        }
+        
+        footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer nav li {
+    display: inline-block;
+    margin: 0 20px;
+  }
+
+  footer nav li:first-child {
+    margin-left: 0;
+  }
+
+  footer nav li:last-child {
+    margin-right: 150px;
+  }
+
+  footer nav li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    margin: 4px 60px;
+  }
+        
+        .family-member {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        
+        .family-member img {
+            width: 300px;
+            height: 300px;
+            margin-right: 20px;
+        }
+        
+        .member-description {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .member-description h3 {
+            font-family: AgrandirBold;
+            color: black;
+            font-size: 40px;
+            margin: 0;
+        }
+        
+        .member-description p {
+            font-family: AgrandirReg;
+            font-size: 22px;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>RAPHAEL MUSNI</h1>
+            <img src="Pictures for Personal Website/banner (1).jpg" height="110" width="790">
+        </div>
+        <h2>My Personal Page</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="photo.html">Photo</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <div class="family-member">
+            <img src="Pictures for Personal Website/Renae.jpg" height="300" width="300">
+            <div class="member-description">
+                <h3>Renae Stefanie A. Musni 🎧</h3>
+                <p>The name is Renae Stefanie Agayam Musni, Age 13. Born on November 25 2009 at Makati Medical Center in Makati. Now living in Zamboanga with my family and studying in Zamboanga Chong Hua High School (ZCHHS). I love art, music, and Genshin Impact. </p>
+            </div>
+        </div>
+        <div class="family-member">
+            <img src="Pictures for Personal Website/Reynier.jpg" height="300" width="300">
+            <div class="member-description">
+                <h3>Reynier I. Musni 🤿</h3>
+                <p>Hi! I am Reynier Indanan Musni, Age 42. Born on March 18 1981. Now living in Zamboanga and working at CLA Construction and Musain Corporation. I am the Father of Renae and Raphael. I enjoy watching movies, cooking and scuba diving.</p>
+            </div>
+        </div>
+        <div class="family-member">
+            <img src="Pictures for Personal Website/Selah.jpg" height="300" width="300">
+            <div class="member-description">
+                <h3>Selah A. Musni ✨</h3>
+                <p>Hello! My name is Selah Agayam Musni and I am the mother of Raphael and Renae. I am now age 39 and I was born on April 11 1984. Living a life in Zamboanga and working as a Physical Therapist in Zamboanga City Medical Center (ZCMC). I am a child of God. And I love my children.</p>
+            </div>
+        </div>
+    </article>
+
+    <footernav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="photo.html">Photo</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </footernav>
+
+</body>
+
+</html>
